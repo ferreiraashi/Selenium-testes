@@ -1,0 +1,53 @@
+{
+  "id": "903c7e85-da3d-4c6b-83ff-5bc91fe34775",
+  "version": "2.0",
+  "name": "atv7-selenium",
+  "url": "https://bobs.com.br/",
+  "tests": [{
+    "id": "be2fcf4c-6ad3-45ba-91d6-eaa71aedbaf2",
+    "name": "atv7-teste",
+    "commands": [{
+      "id": "cd68a327-3f0a-4c6f-a12b-429356e7689a",
+      "comment": "",
+      "command": "open",
+      "target": "/accounts/login/?next=/perfil/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "831e0d62-5abf-4819-8bad-efe6758370d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab56cb19-727e-4ea5-8426-06c810bfacc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link",
+      "targets": [
+        ["css=.navbar-nav:nth-child(1) > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/cardapio/')]", "xpath:href"],
+        ["xpath=//ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f17f062-baa7-4151-9f77-6a5333f90431",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Bob's Brasil - Cardápio",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1c7e46a1-6c85-43a7-849d-93e9c4826646",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["be2fcf4c-6ad3-45ba-91d6-eaa71aedbaf2"]
+  }],
+  "urls": ["https://bobs.com.br/"],
+  "plugins": []
+}
